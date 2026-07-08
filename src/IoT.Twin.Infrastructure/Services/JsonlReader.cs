@@ -18,13 +18,15 @@ public static class JsonlReader
         var records = new List<JsonlRecord>();
         var lines = File.ReadAllLines(filePath);
 
+        var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+
         foreach (var line in lines)
         {
             if (string.IsNullOrWhiteSpace(line)) continue;
 
             try
             {
-                var record = JsonSerializer.Deserialize<JsonlRecord>(line);
+                var record = JsonSerializer.Deserialize<JsonlRecord>(line, options);
                 if (record != null)
                     records.Add(record);
             }
