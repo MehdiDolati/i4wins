@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/IoT.Twin.Api/IoT.Twin.Api.csproj" />
+    <Project Path="src/IoT.Twin.Application/IoT.Twin.Application.csproj" />
+    <Project Path="src/IoT.Twin.Domain/IoT.Twin.Domain.csproj" />
+    <Project Path="src/IoT.Twin.Infrastructure/IoT.Twin.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/IoT.Twin.Application.Tests/IoT.Twin.Application.Tests.csproj" />
+    <Project Path="tests/IoT.Twin.Infrastructure.Tests/IoT.Twin.Infrastructure.Tests.csproj" />
+  </Folder>
+</Solution>
