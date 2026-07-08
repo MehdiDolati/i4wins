@@ -28,7 +28,8 @@ app.MapScalarApiReference(options =>
     options
         .WithTitle("IoT Twin API")
         .WithTheme(ScalarTheme.Kepler)
-        .WithDefaultHttpClient(ScalarTarget.CSharp, ScalarClient.HttpClient);
+        .WithDefaultHttpClient(ScalarTarget.CSharp, ScalarClient.HttpClient)
+        .WithOpenApiRoutePattern("/swagger/v1/swagger.json");
 });
 
 // Swagger
