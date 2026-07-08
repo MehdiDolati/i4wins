@@ -298,9 +298,9 @@ dotnet test
 
 | پروژه تست | تعداد | تمرکز |
 |-----------|-------|-------|
-| Application.Tests | 15 | پاکسازی، aggregation، time series |
+| Application.Tests | 14 | پاکسازی، aggregation، time series |
 | Infrastructure.Tests | 6 | repository، queries، filtering |
-| **مجموع** | **21** | |
+| **مجموع** | **20** | |
 
 ### تست‌های کلیدی
 
@@ -400,7 +400,7 @@ dotnet test
 > **سوال:** چگونه از صحت پاکسازی و aggregation اطمینان حاصل می‌کنیم؟
 
 **پاسخ فعلی:**
-- 21 تست unit با پوشش خوب
+- 20 تست unit با پوشش خوب 91 درصد از خطوط کد
 - استفاده از InMemory database برای تست‌ها
 - Mock برای testing منطق کسب‌وکار
 
